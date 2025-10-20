@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tower Quest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tower Quest</h1>
+    <p>Scan your block and reveal your challenge!</p>
+  </header>
+
+  <main>
+    <label for="block">Choose your block:</label>
+    <select id="block">
+      <option value="">--Select--</option>
+      <!-- Options will be filled dynamically -->
+    </select>
+    <br>
+    <button onclick="getChallenge()">Reveal Challenge</button>
+    <button onclick="getRandomChallenge()">Random Challenge</button>
+
+    <div id="challenge-display">
+      <h2>Your Challenge:</h2>
+      <p id="challenge-text">Waiting for your selection...</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tower Quest</p>
+  </footer>
+
+
+  <script src="https://unpkg.com/tabletop@1.5.1/tabletop.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
